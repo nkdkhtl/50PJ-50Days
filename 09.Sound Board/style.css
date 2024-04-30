@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200;400&family=Ubuntu:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(161 100 223);
+}
+
+.btn {
+    display:  flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 1.9rem;
+    color: #fff;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 24px 48px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+button:focus {
+    outline: none;
+}

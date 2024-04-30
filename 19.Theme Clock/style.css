@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color:#000;
+}
+
+
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Heebo",sans-serif;
+}
+
+html.dark {
+    --primary-color: #000;
+    --secondary-color:#fff;
+}
+body {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: all 1s ease;
+}
+
+
+.dark {
+    background-color: var(--secondary-color);
+}
+
+.toggle {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    background-color: none;
+}
+
+.clock {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.hour-hand,.minute-hand,.second-hand {
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+.hour-hand {
+    width: 30%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    transform: rotate(30deg);
+
+}
+.minute-hand {
+    width: 40%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    transform: rotate(50deg);
+}
+.second-hand {
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: red 5px solid;
+    position: absolute;
+    top: 50%;
+    right: 48%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-dot {
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: black 5px solid;
+    top: 50%;
+    right: -24%;
+    transform: translateY(-50%);
+}
+
+
+.time-clock {
+    color: var(--secondary-color);
+    font-size: 6rem;
+}
+
+.date {
+    color: #aaa;
+    font-size: 2rem;
+    
+}
+
+.circle {
+    border-radius: 50%;
+    font-size: 1.4rem;
+    padding: 0px 6px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ 
+* {
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+    
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.action-butt {
+
+}
+button {
+    z-index: 99;
+    cursor: pointer;
+    border: none;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);    
+ 
+}
+button i {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+button:hover i {
+    color: #222222;
+}
+.next {
+    transform: translateY(-100%);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.prev {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    transform: translateX(-100%)
+}
+
+.desc-container {
+    width: 35%;
+    overflow-y: visible;
+    transition: transform 0.5s linear;
+    
+}
+
+
+.desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc-1 {
+    background-color: cadetblue;
+}
+.desc-2 {
+    background-color: goldenrod;
+}
+.desc-3 {
+    background-color: pink;
+}
+.desc-4 {
+    background-color: skyblue;
+}
+
+.desc > h1,.desc > p {
+    margin: 0;
+}
+
+.pics-container {
+    width: 65%;
+    overflow-y: visible;
+    transition: transform 0.5s linear;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

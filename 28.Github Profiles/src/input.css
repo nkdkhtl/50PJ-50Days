@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+    font-size: Poppins,sans-serif;
+    color: white;
+}
+
+input {
+    width: 700px;
+}
+
+.card {
+    padding: 48px;
+}

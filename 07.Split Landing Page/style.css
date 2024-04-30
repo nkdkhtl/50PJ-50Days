@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: width ease-in-out 1s;
+}
+
+
+.ps5 {
+    background-image: url(./ps.jpg);
+    position: relative;
+}
+
+.ps5:hover,.xbox:hover {
+    width: 150%;
+}
+
+.ps5::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 84, 236, 0.7);
+}
+
+.xbox {
+    background-image: url(./xbox.jpg);
+    position: relative;
+}
+
+
+.xbox::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+h1 {
+    font-size: 5rem;
+    color: #fff;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 20px 80px;
+    font-size: 1.6rem;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.ps5 > a:hover {
+    background-color: rgba(87, 84, 236, 1);
+}
+
+.xbox > a:hover {
+    background-color: rgba(28, 122, 28, 1);
+}

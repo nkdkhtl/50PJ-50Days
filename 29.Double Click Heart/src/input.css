@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.img {
+    width: 300px;
+    height: 440px;
+    background-image: url("https://wonderfulengineering.com/wp-content/uploads/2014/05/iPhone-5S-wallpaper-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.img > i {
+    position: absolute;
+    animation: createHeart 0.8s linear;
+}
+
+@keyframes createHeart {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(8);
+
+    }
+}

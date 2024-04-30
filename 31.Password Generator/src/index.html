@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/beginner/50PJ-50Days/31.Password Generator/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+<body class="w-screen h-screen flex justify-center items-center">
+  <div class="container p-8">
+    <h1>Password Generator</h1>
+    <div class="result-container flex justify-between">
+      <span id="result" class="my-auto text-lg"></span>
+      <button class="button" id="clipboard">
+        <i class="fa-regular fa-clipboard"></i>
+      </button>
+    </div>
+    <ul class="settings">
+      <li class="setting">
+        <p>Password Length</p>
+        <input style="color: black;" type="number" max="20" min="4" value="20" step="1">
+      </li>
+      <li class="setting">
+        <p>Include uppercase letters</p>
+        <input type="checkbox" name="" id="" checked>
+      </li>
+      <li class="setting">
+        <p>Include lowercase letters</p>
+        <input type="checkbox" name="" id="" checked>
+      </li>
+      <li class="setting">
+        <p>Include numbers</p>
+        <input type="checkbox" name="" id="" checked>
+      </li>
+      <li class="setting">
+        <p>Include symbols</p>
+        <input type="checkbox" name="" id="" checked>
+      </li>
+    </ul>
+    <button class="btn" id="generate">Generate Password</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

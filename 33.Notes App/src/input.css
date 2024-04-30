@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #7bdaf3;
+    padding: 48px;
+}
+button {
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    top: 10px;
+    color: white;
+    padding: 8px 16px 8px 30px;
+    background-color: #9ec862;
+    text-align: center;
+}
+span {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+
+.note {
+    width: 400px;
+    height: 400px;
+    margin: 10px 0;
+}
+.main {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.main.focused > textarea {
+    visibility: visible;
+}
+
+.main.focused > p {
+    display: none;
+}
+.main > p {
+    font-size: 16px;
+    
+}
+.tools {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    background-color: #9ec862;
+    padding: 4px 8px;
+}
+
+.write,.remove {
+    cursor: pointer;
+}
+
+i {
+    font-size: 16px;
+    color: white;
+
+}
+
+textarea {
+    font-size: 20px;
+    padding: 20px;
+    resize: none;
+    visibility: hidden;
+}
+
+textarea:focus {
+    outline: none;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: "Roboto",sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.card {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3) ;
+    background-color: #fff;
+}
+
+
+.card__header,.card__header img {
+    height: 200px;
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+
+.card__content {
+    padding: 30px;
+}
+
+.card__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card__excerpt {
+    font-size: 1.6rem;
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.card__profile {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.card__avatar,.card__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card__author {
+    margin-left: 5px;
+}
+
+.card__name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.card__date {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+
+
+.animated-bg {
+    background: linear-gradient(   
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+      );
+    background-size: 200% 100%;
+    animation: bgPositionAnimation 1s linear infinite;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 5px 0;
+    height: 10px;
+    width: 100%;
+}
+
+@keyframes bgPositionAnimation {
+    0% {
+        background-position: 50% 0;
+    } 
+
+    100% {
+        background-position: -150% 0;
+    }
+}
+
+
+

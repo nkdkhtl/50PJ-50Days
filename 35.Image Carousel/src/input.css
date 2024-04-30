@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 500px;
+    height: 540px;
+    overflow: hidden;
+}
+
+
+.slider {
+    transform: translateX(0px);
+    transition: transform 1s ease-in-out;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.prev,.next {
+    user-select: none;
+    color: white;
+    background-color: #7547a3;
+    padding: 5px 108px;
+    cursor: pointer;
+}
+
+.prev:hover,.next:hover {
+    opacity: 0.9;
+}
+
+

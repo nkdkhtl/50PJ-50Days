@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+
+    background-color: #111111;
+}
+
+.square__container {
+    width: 400px;
+    height: 500px;
+    gap: 4px;
+}
+
+.square {
+    height: 16px;
+    width: 16px;
+    background-color: #1d1d1d;
+    transition: all 2s linear;
+
+}
+
+.square:hover {
+    background-color: purple;
+    transition: 0s linear;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.navbar__search {
+    background-color: var(--secondary-color);
+    border: 1px #000 solid;
+    padding: 10px 16px;
+    font-size: 1.6rem;
+    border-radius: 30px;
+}
+.navbar__search:focus {
+    background-color: var(--primary-color);
+    outline: none;
+}
+
+.movies__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    height: 100vh;
+}
+
+.movie {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie:hover > .movie--overview {
+    transform: translateY(0);
+}
+
+.movie > img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.movie--info {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 8px 16px 16px;
+}
+
+.movie--info > h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.movie--info > span {
+    height: min-content;
+    padding: 4px 8px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    align-self: center;
+}
+
+
+.movie--overview {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--white-color);
+    height: fit-content;
+    max-height: 400px;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    overflow: scroll;
+}   
+
+.movie--overview::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.movie--overview > h3 {
+    margin: 35px 30px 18px;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.movie--overview > span {
+    display: block;
+    font-size: 1.6rem;
+    color: #000;
+    margin: 0 30px 16px;
+}

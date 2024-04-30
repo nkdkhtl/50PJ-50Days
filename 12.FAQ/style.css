@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 50px;
+}
+
+.question.active > button > i#open {
+    display: none;
+}
+
+.question.active > button > i#close {
+    visibility: visible;
+}
+
+.question.active > span {
+    display: block;
+}
+
+.question.active::after,.question.active::before {
+    display: block;
+}
+
+
+.question.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.question {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #9fa4a8;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    transition: box-shadow,background-color 0.5s ease;
+}
+
+.question::after,.question::before {
+    display: none;
+    position: absolute;
+    font: var(--fa-font-regular);
+    content: "\f075";
+    font-size: 10rem;
+    color: #2ecc71;
+    opacity: 0.2;
+    left: 40px;
+    top:38px;
+    z-index: 0;
+}
+
+
+
+.question::after {
+    color: #3498db;
+    transform: rotateY(180deg);
+    left: -14px;
+    top: -4px;
+}
+
+.question > h3 {
+    font-size: 1.8rem;
+    margin: 0 40px 0 0;
+}
+
+span {
+    font-size: 1.6rem;
+    display: none;
+    margin-top: 30px;
+}
+
+.question > button {
+    position: absolute;
+    background:none;
+    border: none;
+    cursor: pointer;
+    top: 24px;
+    right: 30px;
+}
+
+
+button > i#open {
+    font-size: 2.4rem;
+}
+
+button > i#close {
+   visibility: hidden;
+   color: #9fa4a8;
+   font-size: 3rem;
+}
+
+
