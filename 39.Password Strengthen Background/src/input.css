@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(https://images.hdqwalls.com/wallpapers/waterfall-rocks-4k-ch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    height: 415px;
+}
+
+.email,.password,button {
+    width: 100%;
+    margin: 16px 0;
+}
+
+input {
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid rgb(226, 232, 240);
+}
